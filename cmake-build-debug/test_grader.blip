@@ -1,0 +1,45 @@
+var dim 5
+var a 0
+// this comment
+do < a dim
+	// this comment
+    var b 1
+    do <= b dim
+		// this comment
+        output + * a dim b 
+		// this comment
+        if % + * a dim b 2
+            text " is an odd number. "
+			// this comment
+            output + * a dim b
+            if % + * a dim b 3
+                text " is not a multiple of 3."
+				// this comment
+            else
+                text " is also a multiple of 3."
+				// this comment
+            fi
+			// this comment
+        else
+            text " is an even number. "
+            output + * a dim b
+			// this comment
+            if % + * a dim b 4
+                text " is not a multiple of 4."
+				// this comment
+            else
+				// this comment
+                text " is also a multiple of 4." 
+				// this comment
+            fi
+			// this comment
+        fi
+		// this comment
+        text "\n"
+        set b + b 1
+		// this comment
+    od
+    set a + a 1
+	// this comment
+od
+text "Hi :)\n"
